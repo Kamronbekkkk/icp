@@ -1,0 +1,34 @@
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.team-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.team-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+}
+.team-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--icp-primary);
+}
+.team-role {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--icp-accent);
+}
+.team-bio {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,133 @@
+/* Portfolio Section Styles */
+.portfolio-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.portfolio-content .section-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--icp-primary);
+}
+
+.portfolio-content .section-description {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+/* Swiper Slides */
+.portfolio-item {
+    display: block;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-image-container img {
+    width: 100%;
+    display: block;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+    max-height: 350px;
+}
+
+.portfolio-info {
+    padding: 1rem 1.5rem;
+}
+
+.portfolio-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--icp-primary);
+}
+
+.portfolio-description {
+    font-size: 1rem;
+    color: rgb(45, 84, 156);
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.portfolio-tag {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: var(--icp-accent);
+    color: #fff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+}
+
+/* Swiper Navigation Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--icp-primary);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: var(--icp-accent);
+}
+
+/* Swiper Pagination Dots */
+.swiper-pagination-bullet {
+    background-color: var(--icp-primary);
+    opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--icp-accent);
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .portfolio-content {
+        padding: 2rem;
+    }
+    .portfolio-title {
+        font-size: 1.2rem;
+    }
+    .portfolio-description {
+        font-size: 0.975rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-info {
+        padding: 0.75rem 1rem;
+    }
+    .portfolio-title {
+        font-size: 1.1rem;
+    }
+    .portfolio-description {
+        font-size: 0.95rem;
+    }
+    .portfolio-item {
+        box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-title {
+        font-size: 1rem;
+    }
+    .portfolio-description {
+        font-size: 0.9rem;
+    }
+}
